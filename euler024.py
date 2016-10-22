@@ -26,6 +26,7 @@ class lexPerm:
             changes[ind]+=1
             self.at += mf
         return changes
+        
     def getPerm(self):
         c = self.getNums()
         per = list(self.lets)

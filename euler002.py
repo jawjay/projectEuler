@@ -2,12 +2,12 @@
 
 # sum of even fibonacci numbers up to T
 #T = int(raw_input().strip())
-T = 2
+T = 1
 ns = [10,100]
 for i in range(T):
 
 	#N = int(raw_input().strip())
-	N = ns[i]
+	N = 4000000
 
 	x1 = 1
 	x2 = 2
@@ -17,5 +17,5 @@ for i in range(T):
 		if x1%2==0:
 			sm = sm+x1 
 
-	print sm
+	print(sm)
 

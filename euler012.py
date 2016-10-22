@@ -1,6 +1,6 @@
 def triangleNumber(n):
     return (n*(n+1))/2
-def getDivisors(n,divisors):
+def getDivisors(n):
     d=0
     if n ==1:
         return 1

@@ -57,14 +57,13 @@
 
 # 	print findMaxPal(N)
 
+def euler004(N):
+	ots = []
+	for a in range(999, 100, -1):
+		for b in range(a, 100, -1):
+			s = str(a * b)
+			if s == s[::-1]:
+				ots.append(a*b)
+	return max(ots)
 
-for i in range(T):
-	N = int(raw_input().strip())
-	n = 0
-	for a in xrange(999, 100, -1):
-		for b in xrange(a, 100, -1):
-			x = a * b
-			if x > n:
-				s = str(a * b)
-				if s == s[::-1]:
-					n = a * b
+print(euler004(1))

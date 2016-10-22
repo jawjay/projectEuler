@@ -37,3 +37,20 @@
 
 # print prime_list(120000)
 
+from eulerFunctions import generate_primes
+
+
+
+def euler007(N):
+    """
+    return the Nth prime
+    """
+    primes = []
+    t = 1000000
+    while len(primes)<N:
+        primes = generate_primes(t)
+        t*=10
+    print(primes[N])
+
+
+euler007(10000)
